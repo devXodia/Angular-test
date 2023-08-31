@@ -7,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   images = ['../assets/img/motto.jpg', '../assets/img/coffee.jpg', '../assets/img/gaming.jpg'];
+  text = ["Mission? Becoming the best Developer out there!", "Hello World!", "Born to code!"];
+  
   currentImage = 0;
   showImage = true; 
+  currentText = 0;
+  showText = true;
+
+
 
   ngOnInit(){
     this.updateImage();
+    
   }
 
 
@@ -27,6 +34,5 @@ export class AppComponent implements OnInit {
     }, 8000)
   }
 
-
-
+  
 }
